@@ -33,4 +33,18 @@ describe('List', () => {
 
   });
 
+
+  describe('push()', () => {
+
+    it('should throw an error with no parameters provided', () => {
+      let myList = loadList();
+
+      try{
+        myList.push();
+      }catch(e){
+        expect(e.message).toEqual('no item provided');
+      }
+    });
+  })
+
 });
