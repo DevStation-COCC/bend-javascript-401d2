@@ -3,16 +3,18 @@
 class List {
   constructor(){
     this.length = 0;
+    this.data = {};
   }
 
   push(item) {
-    this[this.length] = item;
+    if(!item) throw Error('no item provided');
+    this.data[this.length] = item;
     this.length++;
   }
 
   pop() {
     let item = this[this.length - 1];
-    delete this[this.length - 1];
+    delete this.data[this.length - 1];
     this.length--;
     return item;
   }
