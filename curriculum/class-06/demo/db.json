@@ -1,0 +1,26 @@
+{
+  "categories": [
+    {
+      "_id": 1,
+      "name": "groceries"
+    },
+    {
+      "_id": 2
+    },
+    {
+      "name": "coding",
+      "_id": 3
+    },
+    {
+      "name": "grocery",
+      "_id": 4
+    }
+  ],
+  "products": [
+    {
+      "name": "apples",
+      "category_id": 4,
+      "_id": 1
+    }
+  ]
+}
