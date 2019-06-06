@@ -1,0 +1,12 @@
+{
+  "source": {
+    "excluded": ["./node_modules/", "../node_modules/"],
+    "includePattern": "./mw/.+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "sourceType": "module",
+  "opts": {
+    "destination": "./docs/",
+    "recurse": true
+  }
+}

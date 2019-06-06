@@ -1,0 +1,17 @@
+{
+  "name": "middleware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "watch": "nodemon server.js",
+    "build-docs": "jsdoc -c ./docs/jsdoc.config.json -R ./README.md . && open docs/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "jsdoc": "^3.6.2"
+  }
+}
