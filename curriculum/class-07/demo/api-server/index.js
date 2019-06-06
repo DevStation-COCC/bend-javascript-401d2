@@ -2,4 +2,4 @@
 
 const server = require('./lib/server.js');
 
-server.start();
+server.start(4444);

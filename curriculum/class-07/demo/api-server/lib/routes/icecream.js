@@ -5,29 +5,13 @@
 const router = require('express').Router();
 
 /**
+ * jkhaskdjlfhf
  * @type {Array}
  */
 let db = [];
 
-/**
- * @swagger
- * /icecream:
- *  get:
- *    responses:
- *      '200':
- *        description: Get all Icecream data
- *        content:
- *          application/json:
- *            schema:
- *              type: object
- *              properties:
- *                name:
- *                  type: string
- *                  example: "Phish food"
- *                flavor:
- *                  type: string
- *                  example: "salmon"
- */
+// Specific to swagger-ui package
+
 /**
  * Get a list of records for Icecream
  * @route GET /icecream
