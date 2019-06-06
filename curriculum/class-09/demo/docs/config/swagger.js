@@ -1,3 +1,5 @@
+'use strict';
+
 const express = require('express');
 const app = express();
 const expressSwagger = require('express-swagger-generator')(app);
@@ -6,14 +8,14 @@ let options = {
   swaggerDefinition: {
     info: {
       description: 'API Server',
-      title: 'Swaggertastic Docs!',
-      version: '1.0.1',
+      title: 'Swagger doc page',
+      version: '0.0.1',
     },
-    host: 'localhost:3300',
-    basePath: '',
+    basePath: '/api/v1',
     produces: [
       'application/json',
     ],
+    host: 'localhost:3000',
     schemes: ['http'],
     securityDefinitions: {
       basicAuth: {
@@ -21,10 +23,10 @@ let options = {
       },
     },
   },
-  basedir: __dirname, //app absolute path
-  files: ['../../lib/routes/*.js'], //Path to the API handle folder
+  basedir: __dirname,
+  files: [`../../routes/*.js`],
 };
-console.log(options);
+
 expressSwagger(options);
-// start up a specific standalone swagger server on a specific port
-app.listen(3333, () => console.log('swagger listening!'));
+
+app.listen(3300, () => console.log('swagger listening'));
