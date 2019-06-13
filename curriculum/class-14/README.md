@@ -1,6 +1,6 @@
 # Access Control (ACL)
 
-## Learning Objectives
+## Learning Objective
 
 * Integrate back-end authorization controls using Express and Mongoose
 
