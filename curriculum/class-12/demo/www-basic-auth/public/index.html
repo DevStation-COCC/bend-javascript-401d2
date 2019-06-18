@@ -48,7 +48,7 @@
         crossorigin="anonymous"></script>
 
         <script>
-            let token = '';
+            let token;
 
             try{
               token = localStorage.getItem('authToken');
@@ -57,13 +57,12 @@
             }
 
             if(token){
-              let authstring = localStorage.getItem('authToken');
               $.ajax({
                 type: "GET",
                 url: "http://localhost:3000/signin",
                 async: false,
                 headers: {
-                  "Authorization": "Bearer " + authstring
+                  "Authorization": "Bearer " + token 
                 },
                 success: function(data){
                   token = data;
@@ -125,7 +124,7 @@
           let googleURL = "https://accounts.google.com/o/oauth2/v2/auth";
 
           let options = {
-            client_id: '', // ADD GOOGLE CLIENT ID HERE
+            client_id: '', // ADD CLIENT ID FOR GOOGLE HERE
             redirect_uri: 'http://localhost:3000/oauth',
             scope: 'email openid profile',
             prompt: 'consent',
