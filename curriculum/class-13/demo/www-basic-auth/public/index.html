@@ -114,6 +114,9 @@
                   localStorage.setItem('authToken', token);
                   $('#token').text(token);
                 },
+                error: function(error){
+                  console.error(error);
+                }
               });
             });
 
@@ -124,7 +127,7 @@
           let googleURL = "https://accounts.google.com/o/oauth2/v2/auth";
 
           let options = {
-            client_id: '', // ADD CLIENT ID FOR GOOGLE HERE
+            client_id: '785840699673-j1omtvv65ni15odnidvltofhr7i8971p.apps.googleusercontent.com', // ADD CLIENT ID FOR GOOGLE HERE
             redirect_uri: 'http://localhost:3000/oauth',
             scope: 'email openid profile',
             prompt: 'consent',
