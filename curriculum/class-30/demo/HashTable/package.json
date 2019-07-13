@@ -1,0 +1,21 @@
+{
+  "name": "hashtable",
+  "version": "1.0.0",
+  "description": "This is a simple implementation of a Hash Table with chaining support.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watchAll",
+    "lint": "eslint ./",
+    "push-check": "npm run lint && npm test"
+  },
+  "keywords": [
+    "data-structures",
+    "hashtable"
+  ],
+  "author": "Adam DuQuette <duquetteadam@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^24.8.0"
+  }
+}
