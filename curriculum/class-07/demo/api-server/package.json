@@ -17,7 +17,7 @@
     "eslint": "^5.7.0",
     "express": "^4.16.4",
     "express-swagger-generator": "^1.1.14",
-    "jest": "^23.6.0",
+    "jest": "^29.3.1",
     "method-override": "^3.0.0",
     "superagent": "^4.0.0-beta.5",
     "supertest": "^3.3.0",
